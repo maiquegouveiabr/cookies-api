@@ -1,6 +1,6 @@
 import { Browser, chromium } from 'playwright';
-import app from './app';
-import config from './config/config';
+import app from './app.js';
+import config from './config/config.js';
 
 let browser: Browser | null = null;
 // Reuse one browser instance, isolate requests with new contexts

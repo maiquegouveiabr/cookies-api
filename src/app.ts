@@ -1,6 +1,6 @@
 import express from 'express';
-import cookiesRouter from './routes/cookiesRoutes';
-import { errorHandler } from './middlewares/errorHandler';
+import cookiesRouter from './routes/cookiesRoutes.js';
+import { errorHandler } from './middlewares/errorHandler.js';
 
 const app = express();
 

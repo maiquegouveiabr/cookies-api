@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { Page } from 'playwright';
-import { getBrowser } from '../server';
-import { limit } from '../concurrencyLimiter';
+import { getBrowser } from '../server.js';
+import { limit } from '../concurrencyLimiter.js';
 
 export const getCookies = async (
   req: Request,
