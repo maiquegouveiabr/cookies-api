@@ -6,7 +6,7 @@ let browser: Browser | null = null;
 // Reuse one browser instance, isolate requests with new contexts
 export async function getBrowser(): Promise<Browser> {
   if (!browser) {
-    browser = await chromium.launch({ args: ['--no-sandbox'] });
+    browser = await chromium.launch({ args: ['--no-sandbox'], headless: true });
   }
   return browser;
 }
